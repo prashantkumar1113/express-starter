@@ -4,8 +4,7 @@ const router = express.Router();
 //LIST ONE
 router.get("/info/:id", (req, res) => {
     console.log("books info id");
-    // res.send(`In books/info/${req.params.id}`);
-    res.json({name: "Hello", author: "Prashant"});
+    res.send(`In books/info/${req.params.id}`);
 });
 
 // LIST ALL
