@@ -1,10 +1,13 @@
-require("dotenv");
+require("dotenv").config();
 const express = require("express");
 const app = express();
 
 // MIDDLEWARE
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+
+// CONTROLLERS
+app.use("/books", require("./controllers/books_controller"));
 
 // ROUTES
 app.get("/", (req, res) => {
@@ -13,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 // LISTEN
-app.listen(3000, () => {
-    console.log("listening on 3000");
+const port = process.env.PORT ? process.env.PORT : 3001;
+app.listen(port, () => {
+    console.log(`listening on ${port}`);
 });
