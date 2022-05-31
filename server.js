@@ -6,6 +6,9 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+// CONTROLLERS
+app.use("/books", require("./controllers/books_controller"));
+
 // ROUTES
 app.get("/", (req, res) => {
     console.log("root url");
