@@ -18,8 +18,10 @@ router.get("/", (req, res) => {
 
 // CREATE ONE
 router.post("/", (req, res) => {
-    console.log("books root post");
-    res.send("In books/ (create)");
+    console.log("books root post", req.body);
+    db.push(req.body);
+    // res.send("In books/ (create)");
+    res.sendStatus(200).json({message: "entry successfully added to the db"});
 });
 
 // DELETE ONE
@@ -31,8 +33,8 @@ router.delete("/delete/:id", (req, res) => {
 });
 
 // UPDATE ONE
-router.patch("/update/:id", (req, res) => {
-    console.log("books update");
+router.put("/update/:id", (req, res) => {
+    console.log("books update", req.body);
     res.send(`In books/update/${req.params.id}`);
 });
 
