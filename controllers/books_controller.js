@@ -95,8 +95,7 @@ router.delete("/delete", (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      //Send status code 204 to indicate no content and message of all books deleted
-      res.json({ message: "All books deleted" }, (statusCode = 204));
+      res.json({ message: "All books deleted" });
     }
   });
 });
