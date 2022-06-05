@@ -95,7 +95,7 @@ router.delete("/delete", (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      res.json({ message: "All books deleted" });
+      res.sendStatus(204).json({ message: "All books deleted" });
     }
   });
 });
