@@ -1,6 +1,6 @@
 module.exports = [
   {
-    id: 1,
+    id: "1",
     name: "IN THE BLOOD",
     author: "Jack Carr",
     isbn: "1982181656",
@@ -10,7 +10,7 @@ module.exports = [
       "The fifth book in the Terminal List series. James Reece goes after the killer of a Mossad operative attached to the C.I.A.",
   },
   {
-    id: 2,
+    id: "2",
     name: "22 SECONDS",
     author: "James Patterson and Maxine Paetro",
     isbn: "0316499374",
@@ -20,7 +20,7 @@ module.exports = [
       "The 22nd book in the Women’s Murder Club series. Lindsay Boxer returns as word gets around about a shipment of drugs and weapons.",
   },
   {
-    id: 3,
+    id: "3",
     name: "THINKING, FAST AND SLOW",
     author: "Daniel Kahneman",
     isbn: "0374533555",
@@ -30,7 +30,7 @@ module.exports = [
       "A winner of the Nobel in economic science discusses how we make choices in business and personal lives and when we can and cannot trust our intuitions.",
   },
   {
-    id: 4,
+    id: "4",
     name: "THE SUBTLE ART OF NOT GIVING A F*CK",
     author: "Mark Manson",
     isbn: "0062457713",
